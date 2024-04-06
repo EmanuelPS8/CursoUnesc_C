@@ -8,9 +8,6 @@ int main()
     if (num>20)
     {
         printf("%d", num/2);
-    } else
-    {
-        printf("%d", num);
     }
     
     
