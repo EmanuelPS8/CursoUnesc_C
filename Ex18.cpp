@@ -2,7 +2,7 @@
 
 int main(){
     int codigo,qtd,preco;
-    int precot;
+    float precot;
     printf("Digito do codigo do produto(de 1-40): ");
     scanf("%d", &codigo);
     printf("Digite a quantidade do produtos: ");
@@ -68,6 +68,6 @@ int main(){
             precot=precot*0.85;
         }
     }
-    printf("preco: %d", preco);
-    printf("preco total: %d", precot);
+    printf("preco: %d\n", preco);
+    printf("preco total com desconto: %f", precot);
 }
