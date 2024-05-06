@@ -6,10 +6,11 @@ main()
     float raiz=0;
     for ( i = 1; i <= 4; i++)
     {
-        printf("Digite um num: ");
+        printf("\nDigite um num: ");
+        fflush(stdin);
         scanf("%d", &num);
         raiz= sqrt(num);
-        printf("%f", raiz);
+        printf("Raiz de %d e: %.1f",num, raiz);
     }
 
 }

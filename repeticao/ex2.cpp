@@ -1,13 +1,14 @@
 #include<stdio.h>
-main()
+int main()
 {
     int i;
     float nota,media;
-    for (i = 1; i<=4; i++)
+    for (i = 1; i <= 4; i++)
     {
-        printf("Digite um numero: ");
+        printf("Digite sua nota: ");
         scanf("%f", &nota);
         media=media+nota;
     }
-    printf("Sua media e: %.2f", media);
+    printf("Sua media e: ", media);
+    
 }
