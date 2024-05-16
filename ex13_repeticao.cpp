@@ -2,7 +2,7 @@
 int main()
 {
     int i,soma,somai,par=0,impar=0;
-    float percentp,percenti;
+    float percentp=0.0,percenti=0.0;
     for ( i = 85; i <= 906; i++)
     {
         printf("%d\n", i++);
@@ -16,6 +16,7 @@ int main()
     }
     printf("soma dos pares: %d", soma);
     printf("soma dos impares: %d", somai);
+    fflush(stdin);
     printf("soma dos : %d", par);
     percenti = 821/impar*100;
     printf("porcentagem dos impares: %f", percenti);
