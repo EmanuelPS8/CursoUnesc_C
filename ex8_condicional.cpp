@@ -10,7 +10,7 @@ int main()
     printf("Media: %f", (n1+n2)/2);
     if (n1>n2)
     {
-       printf("diferenca: ", n1s)
+       printf("diferenca: ", n1)
     }
     
 }
