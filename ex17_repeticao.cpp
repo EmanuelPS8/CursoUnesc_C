@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
-    int num,num2,soma=0,maior,menor,imp=0,i,par=0;
-    float media,percent;
+    int num,num2,soma=0,maior=-99999,menor=99999,i,par=0;
+    float media,percent, imp=0;
     printf("Digite um numero: ");
     scanf("%d", &num);
     for ( i = 1; i <= num; i++)
@@ -14,14 +14,15 @@ int main(){
         }else{
             par++;
         }
+        
     }
     media=soma/num;
     printf("Media: %.1f\n", media);
     printf("Soma: %d\n", soma);
     printf("Qtd: %d\n", num);
-    percent=imp/num*100;
-    printf("Percent de impar: %f\n", percent);
-    printf("impar: %d", imp);
+    percent=imp/num*100.0;
+    printf("Percent de impar: %.0f\n", percent);
+    printf("impar: %f", imp);
 
 
 }
