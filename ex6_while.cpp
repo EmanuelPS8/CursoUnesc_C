@@ -1,6 +1,6 @@
 #include<stdio.h>
 main(){
-    int idade, f, m,totali;
+    int idade=0, f=0, m=0,totali=0;
     float media;
     char sexo;
 
@@ -19,16 +19,17 @@ main(){
     if (sexo=='f')
     {
         f++;
-    } else {
+    } if (sexo=='m') {
         m++;
     }
     totali = idade + totali;
 
     
     }
-    media=totali/f+m;
-    printf("Mulheres: %d", f);
-    printf("Homens: %d", m);
+    media=totali/(f+m);
+    printf("Mulheres: %d\n", f);
+    printf("total: %d\n", totali);
+    printf("Homens: %d\n", m);
     printf("Media: %f", media);
 
     
