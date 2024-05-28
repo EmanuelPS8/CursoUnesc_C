@@ -15,36 +15,25 @@ main(){
         printf("Seu estado civil (C - casado\nS - solteiro\nV - viuvo\nD - desquitado ou separado): ");
         scanf("%c", &ec);
         p++;
-        if (ec='C')
+        fflush(stdin);
+        if (ec=='C' || ec=='c')
         {
             c++;
-        } else if (ec='c')
-        {
-            c++;
-        } else if (ec='S')
-        {
+        
+        } else if (ec=='S' || ec=='s'){
             s++;
-        }else if (ec='s')
-        {
-            s++;
-        }else if (ec='V')
-        {
+        
+        }else if (ec=='V' || ec=='v'){
             v++;
-            totali = idade + totali;
-        }else if (ec='v')
-        {
-            v++;
-            totali = idade + totali;
-        }else if (ec='D')
-        {
-            d++;
-        }else if (ec='d')
+            totali = idade+totali;
+        }else if (ec=='D' || ec=='d')
         {
             d++;
         }
+        fflush(stdin);
     }
     mediav=totali/v;
-    percent=p/d*100;
+    percent=p/d;
     fflush(stdin);
     printf("Casadas: %d", c);
     printf("Solteiras: %d", s);
