@@ -10,7 +10,7 @@ main(){
     gets(nome);
     printf("Saldo da conta: ");
     scanf("%f", &saldo);
-    while (conta != -999 || clientes == 5 )
+    while (clientes <3 )
     {
         clientes++;
         printf("Numero da conta: ");
@@ -29,16 +29,16 @@ main(){
         agencia = saldo + agencia;
         if (saldo >= 0)
         {
-            printf("Seu saldo está positivo\n");   
+            printf("Seu saldo esta positivo\n");   
             p++;         
         } else if (saldo < 0)
         {
-            printf("Seu saldo está negativo\n");            
+            printf("Seu saldo esta negativo\n");            
             n++;
         }
         
     }
-    percentual = p/clientes;
+    percentual = p/clientes*100;
     printf("Saldo negativo: %d\n", n);
     printf("Porcentagem de saldo positivo: %.0f\n", percentual);
     printf("Total de clientes: %d\n", clientes); 
